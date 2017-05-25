@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/moment/min/moment.min.js"></script>
+  <script type="text/javascript" src="js/set.js"></script>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="build/js/app.js"></script>
+  <script src="build/css/vendor.css"></script>
+  <title>alarm-clock</title>
+</head>
+
+<body>
+  <div class="container">
+    <form id="alarm-clock-form">
+      <label for="time">Set Time:</label>
+      <input id="timeSet" type="time">
+      <button class="btn-success" type="submit">Set Alarm!</button>
+    </form>
+    <h3>Current Time: </h3>
+    <h3 id="currentTime"></h3>
+    <h3>Time Set: </h3>
+    <h3 id="displaySetTime"></h3>
+    <button id="stopButton" class="btn-danger" type="submit" onclick="stopAlarm()">Stop Alarm!</button>
+  </div>
+</body>
+
+</html>
